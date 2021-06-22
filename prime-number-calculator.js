@@ -7,7 +7,19 @@ while (maximum != now_number) {
         }
     }
     if (amount == 2) {
-        document.write(now_number + "<br>");
+            if (now_number < 10) {
+                document.write("0");
+            }
+            if (now_number < 100) {
+                document.write("0")
+            }
+            if (now_number < 1000) {
+                document.write("0")
+            }
+            if (now_number < 10000) {
+                document.write("0")
+            }
+            document.write(now_number + " ");
     }
     number_will_be_divided = 0;
     amount = 0;
